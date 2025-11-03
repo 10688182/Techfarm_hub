@@ -1,0 +1,2630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers - TECHFARM Hub | Join Our Team</title>
+    <meta
+      name="description"
+      content="Explore career opportunities at TECHFARM Hub. Join our team of agri-tech innovators and make a difference in sustainable agriculture."
+    />
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f0fdf4",
+                100: "#dcfce7",
+                200: "#bbf7d0",
+                300: "#86efac",
+                400: "#4ade80",
+                500: "#22c55e",
+                600: "#16a34a",
+                700: "#15803d",
+                800: "#166534",
+                900: "#7A1A61",
+              },
+              secondary: {
+                50: "#eff6ff",
+                100: "#dbeafe",
+                200: "#bfdbfe",
+                300: "#93c5fd",
+                400: "#60a5fa",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a",
+              },
+              accent: {
+                50: "#fffbeb",
+                100: "#fef3c7",
+                200: "#fde68a",
+                300: "#fcd34d",
+                400: "#fbbf24",
+                500: "#f59e0b",
+                600: "#d97706",
+                700: "#b45309",
+                800: "#92400e",
+                900: "#78350f",
+              },
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+            animation: {
+              "bounce-slow": "bounce 3s infinite",
+              "pulse-slow": "pulse 4s infinite",
+              "fade-in": "fadeIn 1.5s ease-out",
+              "fade-in-up": "fadeInUp 1s ease-out",
+              "fade-in-down": "fadeInDown 1s ease-out",
+              "fade-in-left": "fadeInLeft 1s ease-out",
+              "fade-in-right": "fadeInRight 1s ease-out",
+              "scroll-left": "scrollLeft 30s linear infinite",
+              "scroll-right": "scrollRight 30s linear infinite",
+              "text-rotate": "textRotate 15s ease-in-out infinite",
+              "zoom-in": "zoomIn 1s ease-out",
+              "slide-up": "slideUp 0.8s ease-out",
+              typewriter: "typewriter 2s steps(20) forwards",
+              "chatbot-bounce": "chatbotBounce 2s infinite",
+              "typing-dots": "typingDots 1.5s infinite ease-in-out",
+              float: "float 6s ease-in-out infinite",
+              shimmer: "shimmer 2s linear infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+      /* Custom animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          transform: translateY(30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInDown {
+        from {
+          transform: translateY(-30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInLeft {
+        from {
+          transform: translateX(-30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInRight {
+        from {
+          transform: translateX(30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes scrollLeft {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      @keyframes scrollRight {
+        0% {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes textRotate {
+        0%,
+        20% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+        25%,
+        45% {
+          opacity: 0;
+          transform: translateY(50px) scale(0.9);
+        }
+        50%,
+        70% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+        75%,
+        95% {
+          opacity: 0;
+          transform: translateY(50px) scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes typewriter {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes chatbotBounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes typingDots {
+        0%,
+        60%,
+        100% {
+          transform: translateY(0);
+          opacity: 0.4;
+        }
+        30% {
+          transform: translateY(-10px);
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -468px 0;
+        }
+        100% {
+          background-position: 468px 0;
+        }
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 1s ease-out;
+      }
+
+      .animate-slide-in-up {
+        animation: slideInUp 0.8s ease-out;
+      }
+
+      .animate-bounce-slow {
+        animation: bounce 3s infinite;
+      }
+
+      .animate-pulse-slow {
+        animation: pulse 4s infinite;
+      }
+
+      .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out;
+      }
+
+      .animate-fade-in-down {
+        animation: fadeInDown 1s ease-out;
+      }
+
+      .animate-fade-in-left {
+        animation: fadeInLeft 1s ease-out;
+      }
+
+      .animate-fade-in-right {
+        animation: fadeInRight 1s ease-out;
+      }
+
+      .animate-scroll-left {
+        animation: scrollLeft 30s linear infinite;
+      }
+
+      .animate-scroll-right {
+        animation: scrollRight 30s linear infinite;
+      }
+
+      .animate-text-rotate {
+        animation: textRotate 15s ease-in-out infinite;
+      }
+
+      .animate-zoom-in {
+        animation: zoomIn 1s ease-out;
+      }
+
+      .animate-slide-up {
+        animation: slideUp 0.8s ease-out;
+      }
+
+      .animate-typewriter {
+        animation: typewriter 2s steps(20) forwards;
+      }
+
+      .animate-chatbot-bounce {
+        animation: chatbotBounce 2s infinite;
+      }
+
+      .animate-typing-dots {
+        animation: typingDots 1.5s infinite ease-in-out;
+      }
+
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .animate-shimmer {
+        animation: shimmer 2s linear infinite;
+        background: linear-gradient(
+          to right,
+          #eff6ff 4%,
+          #e2e8f0 25%,
+          #eff6ff 36%
+        );
+        background-size: 1000px 100%;
+      }
+
+      /* Smooth transitions for all elements */
+      * {
+        transition: all 0.3s ease;
+      }
+
+      /* Gradient backgrounds */
+      .gradient-bg {
+        background: linear-gradient(135deg, #7a1a61 0%, #3b82f6 100%);
+      }
+
+      .gradient-bg-2 {
+        background: linear-gradient(135deg, #16a34a 0%, #2563eb 100%);
+      }
+
+      .gradient-bg-3 {
+        background: linear-gradient(135deg, #15803d 0%, #1d4ed8 100%);
+      }
+
+      .gradient-bg-light {
+        background: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 100%);
+      }
+
+      .gradient-bg-services {
+        background: linear-gradient(135deg, #dcfce7 0%, #dbeafe 100%);
+      }
+      .text-gradient {
+        background: linear-gradient(135deg, #22c55e 0%, #7a1a61 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* Card hover effects */
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      /* Chatbot Styles */
+      .chatbot-container {
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        z-index: 1000;
+        width: 350px;
+        height: 500px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .chatbot-container.open {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .chatbot-header {
+        background: linear-gradient(135deg, #7a1a61 0%, #3b82f6 100%);
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .chatbot-messages {
+        height: 350px;
+        overflow-y: auto;
+        padding: 20px;
+        background: #f8fafc;
+      }
+
+      .message {
+        margin-bottom: 15px;
+        display: flex;
+      }
+
+      .message.bot {
+        justify-content: flex-start;
+      }
+
+      .message.user {
+        justify-content: flex-end;
+      }
+
+      .message-content {
+        max-width: 80%;
+        padding: 12px 16px;
+        border-radius: 18px;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+
+      .message.bot .message-content {
+        background: white;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .message.user .message-content {
+        background: linear-gradient(135deg, #7a1a61 0%, #3b82f6 100%);
+        color: white;
+        border-bottom-right-radius: 5px;
+      }
+
+      .typing-indicator {
+        display: flex;
+        align-items: center;
+        padding: 10px 16px;
+        background: white;
+        border-radius: 18px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: fit-content;
+      }
+
+      .typing-dot {
+        width: 8px;
+        height: 8px;
+        background: #7a1a61;
+        border-radius: 50%;
+        margin: 0 2px;
+      }
+
+      .typing-dot:nth-child(1) {
+        animation-delay: 0s;
+      }
+
+      .typing-dot:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .typing-dot:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      .chatbot-input {
+        display: flex;
+        padding: 15px;
+        border-top: 1px solid #e2e8f0;
+        background: white;
+      }
+
+      .chatbot-input input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        border-radius: 25px;
+        background: #f1f5f9;
+        font-size: 14px;
+      }
+
+      .chatbot-input button {
+        background: linear-gradient(135deg, #7a1a61 0%, #3b82f6 100%);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .chatbot-toggle {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #7a1a61 0%, #3b82f6 100%);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(122, 26, 97, 0.4);
+        z-index: 1000;
+        animation: chatbotBounce 2s infinite;
+      }
+
+      .whatsapp-toggle {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #25d366;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        z-index: 1000;
+        transition: transform 0.3s ease;
+      }
+
+      .whatsapp-toggle:hover {
+        transform: scale(1.1);
+      }
+
+      /* Modal styles */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .modal-overlay.active {
+        opacity: 1;
+      }
+
+      .modal-content {
+        background: white;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 1200px;
+        max-height: 90vh;
+        overflow-y: auto;
+        transform: scale(0.9);
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .modal-overlay.active .modal-content {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      /* Animation delays */
+      .animation-delay-100 {
+        animation-delay: 100ms;
+      }
+      .animation-delay-200 {
+        animation-delay: 200ms;
+      }
+      .animation-delay-300 {
+        animation-delay: 300ms;
+      }
+      .animation-delay-400 {
+        animation-delay: 400ms;
+      }
+      .animation-delay-500 {
+        animation-delay: 500ms;
+      }
+      .animation-delay-1000 {
+        animation-delay: 1000ms;
+      }
+      .animation-delay-2000 {
+        animation-delay: 2000ms;
+      }
+
+      /* Skip to content link */
+      .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #7a1a61;
+        color: white;
+        padding: 8px;
+        z-index: 10000;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: top 0.3s ease;
+      }
+
+      .skip-to-content:focus {
+        top: 6px;
+      }
+
+      /* Image loading states */
+      img {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      img.loaded {
+        opacity: 1;
+      }
+
+      /* Ensure Alpine.js x-show works properly */
+      [x-cloak] {
+        display: none !important;
+      }
+
+      /* Responsive improvements */
+      @media (max-width: 768px) {
+        .chatbot-container {
+          width: 90%;
+          height: 70%;
+          right: 5%;
+          bottom: 100px;
+        }
+
+        .chatbot-toggle {
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+        }
+
+        .whatsapp-toggle {
+          bottom: 20px;
+          left: 20px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50" x-data="app()">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 bg-white shadow-sm"
+      x-data="{ mobileMenu: false }"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="TECHFARM Hub Logo"
+                class="h-32 w-auto"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="ml-10 flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >About</a
+              >
+              <a
+                href="services.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Services</a
+              >
+              <a
+                href="projects.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Projects</a
+              >
+              <a
+                href="events.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Events</a
+              >
+              <a
+                href="careers.html"
+                class="text-primary-600 font-semibold px-3 py-2 text-sm"
+                >Careers</a
+              >
+              <a
+                href="contact.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Contact</a
+              >
+              <a
+                href="#"
+                class="bg-secondary-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-secondary-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2"
+                >Get Started</a
+              >
+            </div>
+          </div>
+          <div class="lg:hidden">
+            <button
+              @click="mobileMenu = !mobileMenu"
+              type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-secondary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+              :aria-expanded="mobileMenu"
+            >
+              <span class="sr-only">Open main menu</span>
+              <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        x-show="mobileMenu"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 -translate-y-4"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-4"
+        class="lg:hidden mobile-menu bg-white shadow-lg"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="index.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >About</a
+          >
+          <a
+            href="services.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Services</a
+          >
+          <a
+            href="programs.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Programs</a
+          >
+          <a
+            href="events.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Events</a
+          >
+          <a
+            href="careers.html"
+            class="block px-3 py-2 rounded-md text-base font-medium bg-primary-100 text-primary-700"
+            >Careers</a
+          >
+          <a
+            href="contact.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md text-base font-medium bg-secondary-600 text-white hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="pt-32 pb-20 gradient-bg-3 relative overflow-hidden"
+      style="background: linear-gradient(135deg, #7a1a61 0%, #16a34a 100%)"
+    >
+      <div class="absolute top-0 left-0 w-full h-full opacity-10">
+        <div
+          class="absolute top-1/4 left-1/4 w-40 h-40 rounded-full bg-white animate-pulse-slow"
+        ></div>
+        <div
+          class="absolute top-1/3 right-1/3 w-60 h-60 rounded-full bg-white animate-pulse-slow animation-delay-1000"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-50 h-50 rounded-full bg-white animate-pulse-slow animation-delay-2000"
+        ></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center animate-fade-in">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-white mb-6 animate-slide-up"
+          >
+            <span class="inline-block animate-float">Join Our</span>
+            <span class="inline-block animate-bounce-slow text-accent-300"
+              >Innovative</span
+            >
+            <span class="inline-block animate-fade-in">Team</span>
+          </h1>
+          <p
+            class="text-xl text-white/90 mb-8 animate-slide-up animation-delay-100"
+          >
+            Help us transform agriculture through technology. Explore exciting
+            career opportunities at TECHFARM Hub and be part of the agri-tech
+            revolution.
+          </p>
+
+          <div
+            class="flex justify-center space-x-4 animate-slide-up animation-delay-200"
+          >
+            <a
+              href="#job-openings"
+              class="bg-white text-primary-700 px-6 py-3 rounded-md whitespace-nowrap font-medium hover:bg-gray-100 transition-colors duration-300 shadow-lg animate-bounce-slow focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-700"
+              >View Open Positions</a
+            >
+            <a
+              href="#why-join-us"
+              class="border-2 border-white text-white px-6 py-3 rounded-md whitespace-nowrap font-medium hover:bg-white hover:text-primary-700 transition-colors duration-300 animate-fade-in-down focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-700"
+              >Why Join Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="py-8 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Search Bar -->
+            <div>
+              <label
+                for="search"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Search Jobs</label
+              >
+              <div class="relative">
+                <input
+                  type="text"
+                  id="search"
+                  x-model="searchQuery"
+                  placeholder="Search by job title..."
+                  class="w-full px-4 py-2 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                />
+                <i
+                  data-feather="search"
+                  class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Job Type Filter -->
+            <div>
+              <label
+                for="jobType"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Job Type</label
+              >
+              <select
+                id="jobType"
+                x-model="selectedJobType"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+              >
+                <option value="">All Types</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Internship">Internship</option>
+              </select>
+            </div>
+
+            <!-- Job Status Filter -->
+            <div>
+              <label
+                for="jobStatus"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Job Status</label
+              >
+              <select
+                id="jobStatus"
+                x-model="selectedJobStatus"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+              >
+                <option value="">All Statuses</option>
+                <option value="open">Open</option>
+                <option value="filled">Filled</option>
+                <option value="closed">Closed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Job Openings Section -->
+    <section id="job-openings" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+          <span class="text-sm font-medium text-primary-600 mb-2 inline-block"
+            ><span class="inline-block animate-bounce">
+              CURRENT OPENINGS
+            </span></span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Explore <span class="text-gradient">Career Opportunities</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
+            Join our team of passionate innovators working at the intersection
+            of agriculture and technology.
+          </p>
+        </div>
+
+        <!-- Job Listings -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <template x-for="job in filteredJobs" :key="job.id">
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden card-hover animate-fade-in-up"
+              data-aos="fade-up"
+            >
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span
+                    class="text-xs font-medium px-3 py-1 rounded-full"
+                    :style="`background-color: ${job.typeColor}; color: white;`"
+                    x-text="job.type"
+                  ></span>
+                  <span
+                    class="text-gray-500 text-sm"
+                    x-text="job.postedTime"
+                  ></span>
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-2"
+                  x-text="job.title"
+                ></h3>
+                <div class="flex items-center text-gray-600 mb-4">
+                  <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                  <span x-text="job.location"></span>
+                </div>
+                <p class="text-gray-600 mb-6" x-text="job.description"></p>
+                <div class="flex justify-between items-center">
+                  <span
+                    class="text-gray-500 text-sm"
+                    x-text="job.status"
+                  ></span>
+                  <button
+                    @click="openJobModal(job)"
+                    class="px-4 py-2 rounded-md text-sm font-medium text-white transition-colors duration-300"
+                    :style="`background-color: ${job.typeColor};`"
+                    :disabled="job.status !== 'open'"
+                    :class="{'opacity-50 cursor-not-allowed': job.status !== 'open'}"
+                  >
+                    <span
+                      x-text="job.status === 'open' ? 'Apply Now' : job.status"
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <!-- No Jobs Available Message -->
+        <div
+          x-show="filteredJobs.length === 0"
+          class="text-center py-12 animate-fade-in"
+          data-aos="fade-up"
+        >
+          <i
+            data-feather="briefcase"
+            class="w-16 h-16 text-gray-400 mx-auto mb-4"
+          ></i>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">
+            No Matching Positions Found
+          </h3>
+          <p class="text-gray-600 max-w-md mx-auto">
+            We don't have any positions matching your search criteria. Try
+            adjusting your filters or check back soon!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Join Us Section -->
+    <section id="why-join-us" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+          <span class="text-sm font-medium text-primary-600 mb-2 inline-block"
+            ><span class="inline-block animate-bounce">
+              WHY TECHFARM HUB
+            </span></span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Why <span class="text-gradient">Join Our Team</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
+            At TECHFARM Hub, we're not just building technology - we're building
+            the future of agriculture.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center card-hover"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i data-feather="target" class="w-8 h-8 text-primary-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Meaningful Impact</h3>
+            <p class="text-gray-600">
+              Work on solutions that address real-world agricultural challenges
+              and contribute to food security.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center card-hover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i data-feather="users" class="w-8 h-8 text-primary-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Collaborative Culture</h3>
+            <p class="text-gray-600">
+              Join a diverse team of experts who value collaboration,
+              innovation, and continuous learning.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center card-hover"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i
+                data-feather="trending-up"
+                class="w-8 h-8 text-primary-600"
+              ></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Growth Opportunities</h3>
+            <p class="text-gray-600">
+              Access professional development programs and opportunities for
+              career advancement in a rapidly growing field.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center card-hover"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i data-feather="award" class="w-8 h-8 text-primary-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Competitive Benefits</h3>
+            <p class="text-gray-600">
+              Enjoy competitive compensation, flexible work arrangements, health
+              benefits, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Employee Testimonials -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+          <span class="text-sm font-medium text-primary-600 mb-2 inline-block"
+            ><span class="inline-block animate-bounce">
+              TEAM VOICES
+            </span></span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            What Our <span class="text-gradient">Team Says</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-50 p-8 rounded-xl card-hover"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4"
+              >
+                <span class="text-primary-600 font-bold">SA</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Sarah Ahmed</h4>
+                <p class="text-gray-600 text-sm">Data Scientist</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Working at TECHFARM Hub has allowed me to apply my data science
+              skills to solve real agricultural problems. The impact we're
+              making keeps me motivated every day."
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-xl card-hover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4"
+              >
+                <span class="text-primary-600 font-bold">JK</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">James Kariuki</h4>
+                <p class="text-gray-600 text-sm">Software Engineer</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "The collaborative environment and cutting-edge projects make
+              TECHFARM Hub an exciting place to work. I've grown so much
+              professionally since joining the team."
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-xl card-hover"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4"
+              >
+                <span class="text-primary-600 font-bold">AM</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Amina Mohammed</h4>
+                <p class="text-gray-600 text-sm">Product Manager</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "At TECHFARM Hub, we're not just building products - we're
+              creating solutions that transform lives. The sense of purpose here
+              is incredible."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+          <span class="text-sm font-medium text-primary-600 mb-2 inline-block"
+            ><span class="inline-block animate-bounce">
+              HOW TO APPLY
+            </span></span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our <span class="text-gradient">Application Process</span>
+          </h2>
+        </div>
+
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+              <div
+                class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto"
+              >
+                <span class="text-primary-600 font-bold text-2xl">1</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Submit Application</h3>
+              <p class="text-gray-600">
+                Complete the online application form and upload your CV and
+                cover letter.
+              </p>
+            </div>
+
+            <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto"
+              >
+                <span class="text-primary-600 font-bold text-2xl">2</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Screening</h3>
+              <p class="text-gray-600">
+                Our team reviews your application and qualifications for the
+                role.
+              </p>
+            </div>
+
+            <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+              <div
+                class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto"
+              >
+                <span class="text-primary-600 font-bold text-2xl">3</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Interviews</h3>
+              <p class="text-gray-600">
+                Participate in interviews with our team members and hiring
+                managers.
+              </p>
+            </div>
+
+            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+              <div
+                class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto"
+              >
+                <span class="text-primary-600 font-bold text-2xl">4</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Offer</h3>
+              <p class="text-gray-600">
+                Receive an offer and join our innovative team at TECHFARM Hub!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-bounce-slow"
+          data-aos="fade-up"
+        >
+          Ready to <span class="text-gradient">Grow With Us</span>?
+        </h2>
+        <p
+          class="text-xl text-gray-600 max-w-3xl mx-auto mb-10 animate-fade-in"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Even if you don't see the perfect role listed, we're always interested
+          in connecting with talented individuals passionate about agri-tech
+          innovation.
+        </p>
+        <div
+          class="flex flex-wrap justify-center gap-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <a
+            href="#job-openings"
+            class="bg-primary-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-primary-700 transition-colors duration-300 animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+            >View Open Positions</a
+          >
+          <a
+            href="contact.html"
+            class="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-md text-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors duration-300 animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+            >General Inquiry</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+          <div>
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="TECHFARM Hub Logo"
+                class="h-32 w-auto"
+              />
+            </a>
+            <p class="text-gray-400 mb-6">
+              Empowering the next generation of agri-tech innovators through
+              investment, education, and community.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-1"
+                aria-label="Twitter"
+              >
+                <i data-feather="twitter" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-1"
+                aria-label="LinkedIn"
+              >
+                <i data-feather="linkedin" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-1"
+                aria-label="Facebook"
+              >
+                <i data-feather="facebook" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-1"
+                aria-label="Instagram"
+              >
+                <i data-feather="instagram" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="events.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Programs</h4>
+            <ul class="space-y=3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Accelerator</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Professional Training</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Innovation Challenges</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Mentorship</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Research Grants</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Subscribe to our newsletter for the latest updates and
+              opportunities.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 rounded-l-md w-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                aria-label="Email for newsletter subscription"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-primary-600 text-white px-4 py-2 rounded-r-md hover:bg-primary-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                aria-label="Subscribe to newsletter"
+              >
+                <i data-feather="send" class="w-5 h-5"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © <span id="current-year"></span> TECHFARM Hub. All rights reserved.
+          </p>
+
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+              >Cookies</a
+            >
+          </div>
+        </div>
+
+        <script>
+          // Automatically insert the current year
+          document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+        </script>
+      </div>
+    </footer>
+
+    <!-- Job Application Modal -->
+    <div
+      class="modal-overlay"
+      x-show="jobModalOpen"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      :class="{ 'active': jobModalOpen }"
+      @click="jobModalOpen = false"
+    >
+      <div
+        class="modal-content"
+        @click.stop
+        x-show="jobModalOpen"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 transform scale-90"
+        x-transition:enter-end="opacity-100 transform scale-100"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100 transform scale-100"
+        x-transition:leave-end="opacity-0 transform scale-90"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2
+              class="text-2xl font-bold text-gray-900"
+              x-text="selectedJob.title"
+            ></h2>
+            <button
+              @click="jobModalOpen = false"
+              class="text-gray-500 hover:text-gray-700"
+            >
+              <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Job Details -->
+            <div>
+              <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                <h3 class="text-lg font-semibold mb-4">Job Details</h3>
+                <div class="space-y-3">
+                  <div class="flex">
+                    <i
+                      data-feather="map-pin"
+                      class="w-5 h-5 text-gray-500 mr-3"
+                    ></i>
+                    <span x-text="selectedJob.location"></span>
+                  </div>
+                  <div class="flex">
+                    <i
+                      data-feather="clock"
+                      class="w-5 h-5 text-gray-500 mr-3"
+                    ></i>
+                    <span x-text="selectedJob.type"></span>
+                  </div>
+                  <div class="flex">
+                    <i
+                      data-feather="calendar"
+                      class="w-5 h-5 text-gray-500 mr-3"
+                    ></i>
+                    <span x-text="selectedJob.postedTime"></span>
+                  </div>
+                  <div class="flex">
+                    <i
+                      data-feather="info"
+                      class="w-5 h-5 text-gray-500 mr-3"
+                    ></i>
+                    <span x-text="selectedJob.status"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-4">Job Description</h3>
+                <div
+                  class="text-gray-700 space-y-4"
+                  x-html="selectedJob.fullDescription"
+                ></div>
+              </div>
+
+              <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-4">Responsibilities</h3>
+                <ul
+                  class="text-gray-700 list-disc pl-5 space-y-2"
+                  x-html="selectedJob.responsibilities"
+                ></ul>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold mb-4">Requirements</h3>
+                <ul
+                  class="text-gray-700 list-disc pl-5 space-y-2"
+                  x-html="selectedJob.requirements"
+                ></ul>
+              </div>
+            </div>
+
+            <!-- Application Form -->
+            <div>
+              <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-6">
+                  Apply for this Position
+                </h3>
+
+                <form @submit.prevent="submitApplication">
+                  <div class="space-y-4">
+                    <div>
+                      <label
+                        for="fullName"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Full Name *</label
+                      >
+                      <input
+                        type="text"
+                        id="fullName"
+                        x-model="applicationForm.fullName"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="email"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Email Address *</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        x-model="applicationForm.email"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="phone"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        id="phone"
+                        x-model="applicationForm.phone"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="currentLocation"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Current Location *</label
+                      >
+                      <input
+                        type="text"
+                        id="currentLocation"
+                        x-model="applicationForm.currentLocation"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        for="salaryExpectation"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Salary Expectation *</label
+                      >
+                      <textarea
+                        id="salaryExpectation"
+                        rows="2"
+                        x-model="applicationForm.salaryExpectation"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        placeholder="Please provide your salary expectation..."
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div>
+                      <label
+                        for="coverLetter"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Cover Letter *</label
+                      >
+                      <textarea
+                        id="coverLetter"
+                        rows="4"
+                        x-model="applicationForm.coverLetter"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        placeholder="Tell us why you're interested in this position and what makes you a great candidate..."
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div>
+                      <label
+                        for="resume"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Resume/CV *</label
+                      >
+                      <div class="flex items-center">
+                        <input
+                          type="file"
+                          id="resume"
+                          @change="handleFileUpload($event, 'resume')"
+                          class="hidden"
+                          accept=".pdf,.doc,.docx"
+                          required
+                        />
+                        <label
+                          for="resume"
+                          class="cursor-pointer bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition-colors duration-300"
+                        >
+                          Choose File
+                        </label>
+                        <span
+                          class="ml-3 text-sm text-gray-600"
+                          x-text="applicationForm.resume ? applicationForm.resume.name : 'No file chosen'"
+                        ></span>
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1">
+                        PDF, DOC, DOCX (Max 5MB)
+                      </p>
+                    </div>
+
+                    <div>
+                      <label
+                        for="additionalFiles"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Additional Documents</label
+                      >
+                      <div class="flex items-center">
+                        <input
+                          type="file"
+                          id="additionalFiles"
+                          @change="handleFileUpload($event, 'additionalFiles')"
+                          class="hidden"
+                          accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                          multiple
+                        />
+                        <label
+                          for="additionalFiles"
+                          class="cursor-pointer bg-gray-200 text-gray-700 px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-300 transition-colors duration-300"
+                        >
+                          Choose Files
+                        </label>
+                        <span
+                          class="ml-3 text-sm text-gray-600"
+                          x-text="applicationForm.additionalFiles.length > 0 ? applicationForm.additionalFiles.length + ' files chosen' : 'No files chosen'"
+                        ></span>
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1">
+                        PDF, DOC, DOCX, JPG, PNG (Max 10MB total)
+                      </p>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="consent"
+                        x-model="applicationForm.consent"
+                        class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                        required
+                      />
+                      <label
+                        for="consent"
+                        class="ml-2 block text-sm text-gray-700"
+                      >
+                        I consent to having TECHFARM Hub store my submitted
+                        information for the purpose of considering my
+                        application.
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Email Preview -->
+                  <div
+                    class="mt-8 border-t pt-6"
+                    x-show="applicationForm.fullName && applicationForm.email"
+                  >
+                    <h4 class="text-md font-semibold mb-3">
+                      Application Preview
+                    </h4>
+                    <div class="bg-gray-50 p-4 rounded-md text-sm">
+                      <p><strong>To:</strong> careers@techfarmhub.com</p>
+                      <p>
+                        <strong>Subject:</strong> Application for
+                        <span x-text="selectedJob.title"></span> -
+                        <span x-text="applicationForm.fullName"></span>
+                      </p>
+                      <p class="mt-2"><strong>Message Preview:</strong></p>
+                      <p class="text-gray-600 mt-1">
+                        Dear Hiring Manager,<br /><br />
+                        I am applying for the
+                        <span x-text="selectedJob.title"></span> position at
+                        TECHFARM Hub.<br /><br />
+                        <span
+                          x-text="applicationForm.coverLetter.substring(0, 200)"
+                        ></span
+                        ><span x-show="applicationForm.coverLetter.length > 200"
+                          >...</span
+                        ><br /><br />
+                        Please find my application materials attached.<br /><br />
+                        Best regards,<br />
+                        <span x-text="applicationForm.fullName"></span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-6">
+                    <button
+                      type="submit"
+                      class="w-full bg-primary-600 text-white py-3 px-4 rounded-md font-medium hover:bg-primary-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                      :disabled="!applicationForm.consent"
+                    >
+                      Submit Application
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chatbot Toggle -->
+    <div class="chatbot-toggle" @click="chatbotOpen = !chatbotOpen">
+      <i data-feather="message-circle" class="w-6 h-6"></i>
+    </div>
+
+    <!-- WhatsApp Toggle -->
+    <div
+      class="whatsapp-toggle"
+      @click="window.open('https://wa.me/1234567890', '_blank')"
+    >
+      <i data-feather="message-circle" class="w-6 h-6"></i>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div
+      class="chatbot-container"
+      x-show="chatbotOpen"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 transform scale-95"
+      x-transition:enter-end="opacity-100 transform scale-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100 transform scale-100"
+      x-transition:leave-end="opacity-0 transform scale-95"
+      :class="{ 'open': chatbotOpen }"
+    >
+      <div class="chatbot-header">
+        <h3 class="font-semibold">TECHFARM Assistant</h3>
+        <button
+          @click="chatbotOpen = false"
+          class="text-white hover:text-gray-200"
+        >
+          <i data-feather="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="chatbot-messages" x-ref="messages">
+        <template x-for="(message, index) in chatbotMessages" :key="index">
+          <div class="message" :class="message.sender">
+            <div class="message-content" x-text="message.text"></div>
+          </div>
+        </template>
+        <div x-show="chatbotTyping" class="message bot">
+          <div class="typing-indicator">
+            <div class="typing-dot animate-typing-dots"></div>
+            <div class="typing-dot animate-typing-dots"></div>
+            <div class="typing-dot animate-typing-dots"></div>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input
+          type="text"
+          placeholder="Type your message..."
+          x-model="chatbotNewMessage"
+          @keyup.enter="sendChatbotMessage()"
+        />
+        <button @click="sendChatbotMessage()">
+          <i data-feather="send" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // Database simulation - In a real application, this would be fetched from a server
+      const jobDatabase = [
+        {
+          id: 1,
+          title: "Agri-Tech Software Engineer",
+          location: "Remote / Nairobi, Kenya",
+          type: "Full-time",
+          typeColor: "#22c55e", // Green for Full-time
+          description:
+            "Develop innovative software solutions for agricultural challenges using cutting-edge technologies.",
+          fullDescription: `
+            <p>We are looking for a skilled Software Engineer to join our team and help develop innovative solutions for agricultural challenges. You will work on cutting-edge technologies to create software that improves farming efficiency, sustainability, and profitability.</p>
+            <p class="mt-2">This role involves collaborating with cross-functional teams including data scientists, agricultural experts, and product managers to design, develop, and deploy software solutions that address real-world agricultural problems.</p>
+          `,
+          responsibilities: `
+            <li>Design, develop, and maintain software applications for agricultural technology solutions</li>
+            <li>Collaborate with cross-functional teams to define, design, and ship new features</li>
+            <li>Write clean, maintainable, and efficient code following best practices</li>
+            <li>Participate in code reviews to maintain code quality and share knowledge</li>
+            <li>Identify and correct bottlenecks and fix bugs in existing systems</li>
+            <li>Stay updated with emerging technologies and industry trends in agri-tech</li>
+          `,
+          requirements: `
+            <li>Bachelor's degree in Computer Science, Engineering, or related field</li>
+            <li>3+ years of professional software development experience</li>
+            <li>Proficiency in one or more programming languages (Python, JavaScript, Java, etc.)</li>
+            <li>Experience with cloud platforms (AWS, Azure, or GCP)</li>
+            <li>Knowledge of database technologies (SQL and NoSQL)</li>
+            <li>Familiarity with Agile development methodologies</li>
+            <li>Interest in agriculture and sustainability is a plus</li>
+          `,
+          status: "open",
+          postedDate: "2023-10-25",
+        },
+        {
+          id: 2,
+          title: "Agricultural Data Scientist",
+          location: "Kampala, Uganda",
+          type: "Full-time",
+          typeColor: "#22c55e", // Green for Full-time
+          description:
+            "Analyze agricultural data to derive insights and build predictive models for crop yield optimization.",
+          fullDescription: `
+            <p>Join our data science team to analyze agricultural data and derive insights that help farmers optimize crop yields, reduce waste, and improve sustainability. You will work with large datasets from various sources including satellite imagery, IoT sensors, and farm management systems.</p>
+            <p class="mt-2">This position offers the opportunity to apply advanced analytics and machine learning techniques to solve critical challenges in agriculture, from predicting crop diseases to optimizing irrigation schedules.</p>
+          `,
+          responsibilities: `
+            <li>Analyze agricultural data to identify patterns, trends, and insights</li>
+            <li>Develop predictive models for crop yield, disease detection, and resource optimization</li>
+            <li>Clean, process, and validate structured and unstructured data from multiple sources</li>
+            <li>Collaborate with agricultural experts to understand domain-specific challenges</li>
+            <li>Communicate findings and insights to technical and non-technical stakeholders</li>
+            <li>Stay current with advancements in data science and agricultural technology</li>
+          `,
+          requirements: `
+            <li>Master's or PhD in Data Science, Statistics, Computer Science, or related field</li>
+            <li>2+ years of experience in data science or analytics role</li>
+            <li>Proficiency in Python, R, or similar languages for data analysis</li>
+            <li>Experience with machine learning frameworks (Scikit-learn, TensorFlow, PyTorch)</li>
+            <li>Strong statistical analysis and data visualization skills</li>
+            <li>Knowledge of SQL and database management</li>
+            <li>Background in agriculture or environmental science is preferred</li>
+          `,
+          status: "open",
+          postedDate: "2023-10-20",
+        },
+        {
+          id: 3,
+          title: "IoT Solutions Architect",
+          location: "Remote",
+          type: "Contract",
+          typeColor: "#3b82f6", // Blue for Contract
+          description:
+            "Design and implement IoT solutions for smart farming applications and precision agriculture.",
+          fullDescription: `
+            <p>We are seeking an experienced IoT Solutions Architect to design and implement Internet of Things solutions for smart farming applications. You will be responsible for creating scalable, secure, and efficient IoT architectures that connect sensors, devices, and platforms to enable precision agriculture.</p>
+            <p class="mt-2">This contract position offers the flexibility to work remotely while contributing to innovative projects that are transforming agriculture through technology.</p>
+          `,
+          responsibilities: `
+            <li>Design end-to-end IoT solutions for agricultural applications</li>
+            <li>Select appropriate hardware, software, and communication protocols</li>
+            <li>Develop system architecture diagrams and technical specifications</li>
+            <li>Ensure security, scalability, and reliability of IoT solutions</li>
+            <li>Collaborate with hardware engineers, software developers, and farmers</li>
+            <li>Provide technical guidance and mentorship to development teams</li>
+          `,
+          requirements: `
+            <li>5+ years of experience in IoT solution architecture or related role</li>
+            <li>Strong knowledge of IoT protocols (MQTT, CoAP, LoRaWAN, etc.)</li>
+            <li>Experience with cloud IoT platforms (AWS IoT, Azure IoT, etc.)</li>
+            <li>Understanding of edge computing and embedded systems</li>
+            <li>Knowledge of security best practices for IoT systems</li>
+            <li>Excellent communication and documentation skills</li>
+            <li>Experience in agriculture or environmental monitoring is a plus</li>
+          `,
+          status: "open",
+          postedDate: "2023-10-24",
+        },
+        {
+          id: 4,
+          title: "Agri-Business Development Manager",
+          location: "Accra, Ghana",
+          type: "Full-time",
+          typeColor: "#22c55e", // Green for Full-time
+          description:
+            "Develop strategic partnerships and drive business growth in the agricultural technology sector.",
+          fullDescription: `
+            <p>Join our business development team to drive growth and establish strategic partnerships in the agricultural technology sector. You will identify new market opportunities, develop relationships with key stakeholders, and create business strategies to expand our reach and impact.</p>
+            <p class="mt-2">This role requires a combination of business acumen, agricultural knowledge, and relationship-building skills to help TECHFARM Hub achieve its mission of transforming agriculture through technology.</p>
+          `,
+          responsibilities: `
+            <li>Identify and pursue new business opportunities in the agri-tech sector</li>
+            <li>Develop and maintain relationships with partners, clients, and stakeholders</li>
+            <li>Create and implement business development strategies</li>
+            <li>Negotiate contracts and agreements with partners and clients</li>
+            <li>Attend industry events and conferences to represent TECHFARM Hub</li>
+            <li>Collaborate with product and marketing teams to align business development efforts</li>
+          `,
+          requirements: `
+            <li>Bachelor's degree in Business, Agriculture, or related field</li>
+            <li>3+ years of experience in business development, preferably in agriculture or technology</li>
+            <li>Proven track record of achieving sales or partnership targets</li>
+            <li>Strong network in the agricultural or technology sectors</li>
+            <li>Excellent communication, negotiation, and presentation skills</li>
+            <li>Ability to travel as needed</li>
+            <li>Knowledge of agricultural markets and challenges in Africa</li>
+          `,
+          status: "filled",
+          postedDate: "2023-10-22",
+        },
+        {
+          id: 5,
+          title: "Agri-Tech Research Intern",
+          location: "Remote / Lagos, Nigeria",
+          type: "Internship",
+          typeColor: "#f59e0b", // Amber for Internship
+          description:
+            "Support research initiatives and contribute to innovative agricultural technology projects.",
+          fullDescription: `
+            <p>We are offering an exciting internship opportunity for students or recent graduates interested in agricultural technology research. As a Research Intern, you will support our R&D initiatives, conduct literature reviews, assist with experiments, and contribute to innovative projects.</p>
+            <p class="mt-2">This internship provides hands-on experience in a dynamic environment where you can apply your academic knowledge to real-world agricultural challenges and learn from industry experts.</p>
+          `,
+          responsibilities: `
+            <li>Assist with research projects in agricultural technology</li>
+            <li>Conduct literature reviews and summarize findings</li>
+            <li>Collect, organize, and analyze research data</li>
+            <li>Prepare reports, presentations, and documentation</li>
+            <li>Support field trials and experiments as needed</li>
+            <li>Collaborate with team members on various research initiatives</li>
+          `,
+          requirements: `
+            <li>Currently pursuing or recently completed a degree in Agriculture, Environmental Science, Computer Science, or related field</li>
+            <li>Strong research and analytical skills</li>
+            <li>Proficiency with Microsoft Office or similar tools</li>
+            <li>Excellent written and verbal communication skills</li>
+            <li>Ability to work independently and as part of a team</li>
+            <li>Interest in agricultural technology and sustainability</li>
+            <li>Previous research experience is a plus</li>
+          `,
+          status: "open",
+          postedDate: "2023-10-26",
+        },
+        {
+          id: 6,
+          title: "UX/UI Designer - Agri-Tech",
+          location: "Koforidua",
+          type: "Full-time",
+          typeColor: "#22c55e", // Green for Full-time
+          description:
+            "Create intuitive and engaging user experiences for agricultural technology applications.",
+          fullDescription: `
+            <p>We are looking for a talented UX/UI Designer to create intuitive and engaging user experiences for our agricultural technology applications. You will work closely with product managers, developers, and agricultural experts to design solutions that meet the needs of farmers and agricultural professionals.</p>
+            <p class="mt-2">This role involves understanding user needs, creating wireframes and prototypes, and designing interfaces that are both functional and visually appealing for users with varying levels of technical expertise.</p>
+          `,
+          responsibilities: `
+            <li>Design user interfaces for web and mobile agricultural applications</li>
+            <li>Create wireframes, prototypes, and high-fidelity mockups</li>
+            <li>Conduct user research and usability testing</li>
+            <li>Collaborate with product managers and developers throughout the design process</li>
+            <li>Develop and maintain design systems and style guides</li>
+            <li>Stay updated with UX/UI trends and best practices</li>
+          `,
+          requirements: `
+            <li>2+ years of experience in UX/UI design</li>
+            <li>Proficiency in design tools such as Figma, Sketch, or Adobe XD</li>
+            <li>Strong portfolio demonstrating UX/UI design skills</li>
+            <li>Understanding of user-centered design principles</li>
+            <li>Knowledge of responsive design and accessibility standards</li>
+            <li>Excellent communication and collaboration skills</li>
+            <li>Experience designing for agricultural or technical applications is a plus</li>
+          `,
+          status: "closed",
+          postedDate: "2025-10-03",
+        },
+      ];
+
+      // Chatbot Database
+      const chatbotDatabase = {
+        greetings: {
+          patterns: [
+            "hello",
+            "hi",
+            "hey",
+            "good morning",
+            "good afternoon",
+            "good evening",
+          ],
+          responses: [
+            "Hello! Welcome to TECHFARM Hub Careers. How can I assist you with job opportunities today?",
+            "Hi there! I'm the TECHFARM Hub careers assistant. What can I help you with regarding our open positions?",
+            "Greetings! I'm here to provide information about career opportunities at TECHFARM Hub.",
+          ],
+        },
+        jobs: {
+          patterns: [
+            "job",
+            "jobs",
+            "position",
+            "positions",
+            "career",
+            "careers",
+            "openings",
+            "vacancies",
+            "hiring",
+            "work",
+            "employment",
+          ],
+          responses: [
+            "We have several exciting positions available in agri-tech innovation. You can view all our current openings on the careers page. Which type of role are you interested in?",
+            "TECHFARM Hub is hiring for various roles including software engineering, data science, business development, and more. Check out our job listings for details!",
+            "We're always looking for talented individuals passionate about transforming agriculture through technology. Browse our open positions to find the right fit for your skills.",
+          ],
+        },
+        application: {
+          patterns: [
+            "apply",
+            "application",
+            "how to apply",
+            "submit",
+            "resume",
+            "cv",
+            "cover letter",
+            "process",
+          ],
+          responses: [
+            "To apply for a position, click the 'Apply Now' button on the job listing, fill out the application form, and upload your resume and cover letter. Our hiring team will review your application and contact qualified candidates.",
+            "The application process involves submitting your information through our online form, including your resume and a cover letter explaining your interest in the role. Selected candidates will be invited for interviews.",
+            "Simply click 'Apply Now' on any job posting to start your application. You'll need to provide your contact information, upload your resume/CV, and include a cover letter. We review applications on a rolling basis.",
+          ],
+        },
+        interview: {
+          patterns: [
+            "interview",
+            "interview process",
+            "hiring process",
+            "screening",
+            "recruitment",
+          ],
+          responses: [
+            "Our hiring process typically includes an initial application review, followed by one or more interviews with our team members. The process may vary depending on the role but generally takes 2-4 weeks.",
+            "After submitting your application, our team will review it and contact qualified candidates for interviews. The interview process may include technical assessments, cultural fit interviews, and meetings with potential team members.",
+            "We aim to make our hiring process transparent and efficient. It usually involves an initial screening, followed by interviews with relevant team members and managers. We'll keep you informed throughout the process.",
+          ],
+        },
+        benefits: {
+          patterns: [
+            "benefits",
+            "compensation",
+            "salary",
+            "pay",
+            "perks",
+            "advantages",
+            "what do you offer",
+          ],
+          responses: [
+            "TECHFARM Hub offers competitive compensation, health benefits, flexible work arrangements, professional development opportunities, and the chance to work on meaningful projects that impact agriculture and food security.",
+            "Our benefits package includes competitive salaries, health insurance, retirement plans, flexible scheduling, remote work options, learning and development programs, and a collaborative work environment focused on innovation.",
+            "We provide comprehensive benefits including competitive pay, health coverage, professional growth opportunities, work-life balance initiatives, and the satisfaction of contributing to sustainable agricultural solutions.",
+          ],
+        },
+        culture: {
+          patterns: [
+            "culture",
+            "work environment",
+            "team",
+            "values",
+            "mission",
+            "what it's like",
+          ],
+          responses: [
+            "At TECHFARM Hub, we foster a collaborative, innovative, and inclusive culture where team members are empowered to make a difference. We value diversity, continuous learning, and creating solutions with real-world impact.",
+            "Our culture is built on collaboration, innovation, and purpose. We bring together diverse perspectives to solve complex agricultural challenges while supporting each other's growth and development.",
+            "We maintain a dynamic, supportive work environment where creativity and initiative are encouraged. Our team is passionate about using technology to create sustainable agricultural solutions that benefit farmers and communities.",
+          ],
+        },
+        contact: {
+          patterns: [
+            "contact",
+            "email",
+            "phone",
+            "address",
+            "location",
+            "visit",
+            "reach",
+            "hr",
+            "human resources",
+          ],
+          responses: [
+            "You can reach our HR team at careers@techfarmhub.com or call +1 (555) 123-4567. Our main office is at 123 Innovation Drive, Tech Valley, CA 94025. We're happy to answer any questions about careers at TECHFARM Hub!",
+            "Contact information: Email: careers@techfarmhub.com | Phone: +1 (555) 123-4567 | Address: 123 Innovation Drive, Tech Valley, CA 94025. Feel free to reach out with any questions about our openings or application process.",
+            "For career-related inquiries, please email careers@techfarmhub.com or call +1 (555) 123-4567. Our HR team is available to assist you with questions about positions, applications, or our hiring process.",
+          ],
+        },
+        default: {
+          responses: [
+            "I'm here to help with information about careers at TECHFARM Hub. You can ask me about open positions, the application process, our company culture, or benefits. What would you like to know?",
+            "As the TECHFARM Hub careers assistant, I can help you learn about job opportunities, how to apply, our hiring process, and what it's like to work here. What specific information are you looking for?",
+            "I specialize in answering questions about careers at TECHFARM Hub. You can ask me about current openings, the application process, company culture, or benefits. How can I assist you today?",
+          ],
+        },
+      };
+
+      // Alpine.js app function
+      function app() {
+        return {
+          // Mobile menu state
+          mobileMenu: false,
+
+          // Search and filter states
+          searchQuery: "",
+          selectedJobType: "",
+          selectedJobStatus: "",
+
+          // Job listings from database
+          jobListings: [],
+
+          // Computed property for filtered jobs
+          get filteredJobs() {
+            let filtered = this.jobListings;
+
+            // Filter by search query
+            if (this.searchQuery) {
+              const query = this.searchQuery.toLowerCase();
+              filtered = filtered.filter(
+                (job) =>
+                  job.title.toLowerCase().includes(query) ||
+                  job.description.toLowerCase().includes(query) ||
+                  job.location.toLowerCase().includes(query)
+              );
+            }
+
+            // Filter by job type
+            if (this.selectedJobType) {
+              filtered = filtered.filter(
+                (job) => job.type === this.selectedJobType
+              );
+            }
+
+            // Filter by job status
+            if (this.selectedJobStatus) {
+              filtered = filtered.filter(
+                (job) => job.status === this.selectedJobStatus
+              );
+            }
+
+            return filtered;
+          },
+
+          // Job modal state
+          jobModalOpen: false,
+          selectedJob: {},
+
+          // Application form
+          applicationForm: {
+            fullName: "",
+            email: "",
+            phone: "",
+            currentLocation: "",
+            salaryExpectation: "",
+            coverLetter: "",
+            resume: null,
+            additionalFiles: [],
+            consent: false,
+          },
+
+          // Chatbot functionality
+          chatbotOpen: false,
+          chatbotMessages: [
+            {
+              sender: "bot",
+              text: "Hello! I'm the TECHFARM Hub careers assistant. I can help you learn about job opportunities, the application process, company culture, and benefits. How can I assist you today?",
+            },
+          ],
+          chatbotNewMessage: "",
+          chatbotTyping: false,
+
+          // Initialize function
+          init() {
+            console.log("Alpine.js initialized - Careers Page");
+
+            // Load job data from database
+            this.loadJobData();
+
+            this.initAnimations();
+            this.initSmoothScroll();
+            this.initImageLoading();
+          },
+
+          // Load job data from database
+          loadJobData() {
+            // In a real application, this would be an API call
+            this.jobListings = jobDatabase.map((job) => ({
+              ...job,
+              postedTime: this.calculatePostedTime(job.postedDate),
+            }));
+          },
+
+          // Calculate how long ago the job was posted
+          calculatePostedTime(postedDate) {
+            const posted = new Date(postedDate);
+            const now = new Date();
+            const diffTime = Math.abs(now - posted);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+            if (diffDays === 1) return "Posted 1 day ago";
+            if (diffDays < 7) return `Posted ${diffDays} days ago`;
+            if (diffDays < 30) {
+              const weeks = Math.floor(diffDays / 7);
+              return `Posted ${weeks} ${weeks === 1 ? "week" : "weeks"} ago`;
+            }
+
+            const months = Math.floor(diffDays / 30);
+            return `Posted ${months} ${months === 1 ? "month" : "months"} ago`;
+          },
+
+          // Open job modal
+          openJobModal(job) {
+            this.selectedJob = job;
+            this.jobModalOpen = true;
+            // Reset form when opening modal
+            this.applicationForm = {
+              fullName: "",
+              email: "",
+              phone: "",
+              currentLocation: "",
+              salaryExpectation: "",
+              coverLetter: "",
+              resume: null,
+              additionalFiles: [],
+              consent: false,
+            };
+          },
+
+          // Handle file upload
+          handleFileUpload(event, field) {
+            const files = event.target.files;
+            if (field === "resume") {
+              this.applicationForm.resume = files[0];
+            } else if (field === "additionalFiles") {
+              this.applicationForm.additionalFiles = Array.from(files);
+            }
+          },
+
+          // Submit application
+          submitApplication() {
+            // In a real application, you would send this data to a server
+            console.log("Application submitted:", this.applicationForm);
+
+            // Show success message
+            alert(
+              "Thank you for your application! We'll review your submission and contact you if there's a match with our current openings."
+            );
+
+            // Close modal
+            this.jobModalOpen = false;
+          },
+
+          // Initialize animations and effects
+          initAnimations() {
+            // Add focus styles for accessibility
+            const focusStyles = `
+              button:focus-visible,
+              a:focus-visible,
+              input:focus-visible {
+                outline: 2px solid #7a1a61;
+                outline-offset: 2px;
+              }
+              
+              /* Reduced motion support */
+              @media (prefers-reduced-motion: reduce) {
+                * {
+                  animation-duration: 0.01ms !important;
+                  animation-iteration-count: 1 !important;
+                  transition-duration: 0.01ms !important;
+                }
+              }
+
+              /* Ensure images display properly */
+              img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+              }
+
+              /* Fix for potential missing images */
+              img[src=""], 
+              img:not([src]) {
+                display: none;
+              }
+            `;
+
+            const styleSheet = document.createElement("style");
+            styleSheet.textContent = focusStyles;
+            document.head.appendChild(styleSheet);
+          },
+
+          // Initialize smooth scrolling
+          initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+              anchor.addEventListener("click", (e) => {
+                e.preventDefault();
+                const target = document.querySelector(
+                  anchor.getAttribute("href")
+                );
+                if (target) {
+                  target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              });
+            });
+          },
+
+          // Initialize image loading states
+          initImageLoading() {
+            document.querySelectorAll("img").forEach((img) => {
+              if (img.complete) {
+                img.classList.add("loaded");
+              } else {
+                img.addEventListener("load", () => {
+                  img.classList.add("loaded");
+                });
+                img.addEventListener("error", () => {
+                  console.warn("Image failed to load:", img.src);
+                });
+              }
+            });
+          },
+
+          // Chatbot message sending
+          sendChatbotMessage() {
+            if (!this.chatbotNewMessage.trim()) return;
+
+            // Add user message
+            this.chatbotMessages.push({
+              sender: "user",
+              text: this.chatbotNewMessage,
+            });
+
+            const userMessage = this.chatbotNewMessage.toLowerCase();
+            this.chatbotNewMessage = "";
+            this.chatbotTyping = true;
+
+            // Scroll to bottom
+            this.$nextTick(() => {
+              this.scrollChatToBottom();
+            });
+
+            // Simulate typing delay
+            setTimeout(() => {
+              this.processBotResponse(userMessage);
+            }, 1000 + Math.random() * 1000);
+          },
+
+          // Process bot response
+          processBotResponse(userMessage) {
+            this.chatbotTyping = false;
+
+            // Find matching response
+            let response = this.findChatbotResponse(userMessage);
+
+            // Add bot response
+            this.chatbotMessages.push({
+              sender: "bot",
+              text: response,
+            });
+
+            // Scroll to bottom again
+            this.$nextTick(() => {
+              this.scrollChatToBottom();
+            });
+          },
+
+          // Scroll chat to bottom
+          scrollChatToBottom() {
+            if (this.$refs.messages) {
+              this.$refs.messages.scrollTop = this.$refs.messages.scrollHeight;
+            }
+          },
+
+          // Find appropriate chatbot response
+          findChatbotResponse(message) {
+            // Check for exact matches first
+            for (const [category, data] of Object.entries(chatbotDatabase)) {
+              if (category === "default") continue;
+
+              for (const pattern of data.patterns) {
+                if (message.includes(pattern)) {
+                  const responses = data.responses;
+                  return responses[
+                    Math.floor(Math.random() * responses.length)
+                  ];
+                }
+              }
+            }
+
+            // Check for partial matches with higher threshold
+            for (const [category, data] of Object.entries(chatbotDatabase)) {
+              if (category === "default") continue;
+
+              for (const pattern of data.patterns) {
+                const words = message.split(" ");
+                for (const word of words) {
+                  if (word.length > 3 && pattern.includes(word)) {
+                    const responses = data.responses;
+                    return responses[
+                      Math.floor(Math.random() * responses.length)
+                    ];
+                  }
+                }
+              }
+            }
+
+            // Default response if no match found
+            const defaultResponses = chatbotDatabase.default.responses;
+            return defaultResponses[
+              Math.floor(Math.random() * defaultResponses.length)
+            ];
+          },
+
+          // Open external links
+          openExternalLink(url) {
+            window.open(url, "_blank");
+          },
+
+          // Toggle mobile menu
+          toggleMobileMenu() {
+            this.mobileMenu = !this.mobileMenu;
+          },
+
+          // Close mobile menu
+          closeMobileMenu() {
+            this.mobileMenu = false;
+          },
+        };
+      }
+
+      // Initialize everything when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Feather Icons
+        if (typeof feather !== "undefined") {
+          feather.replace();
+
+          // Refresh icons after dynamic content changes
+          setInterval(() => {
+            feather.replace();
+          }, 1000);
+        }
+
+        // Initialize AOS animations
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            duration: 800,
+            easing: "ease-in-out",
+            once: true,
+            offset: 100,
+            disable: window.innerWidth < 768,
+          });
+        }
+
+        // Handle page visibility changes
+        document.addEventListener("visibilitychange", function () {
+          if (!document.hidden && typeof feather !== "undefined") {
+            feather.replace();
+          }
+        });
+
+        // Error handling for images
+        document.querySelectorAll("img").forEach((img) => {
+          img.addEventListener("error", function () {
+            console.warn("Image failed to load:", this.src);
+          });
+        });
+
+        // Console welcome message
+        console.log(`
+          🌱 TECHFARM Hub - Careers Page
+          🚀 Join Our Innovative Team
+          📧 Contact: careers@techfarmhub.com
+          🌐 Transforming agriculture careers through innovation
+        `);
+      });
+
+      // Handle page before unload
+      window.addEventListener("beforeunload", function () {
+        // Clean up any ongoing processes if needed
+        if (typeof AOS !== "undefined") {
+          AOS.refresh();
+        }
+      });
+    </script>
+  </body>
+</html>

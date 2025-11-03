@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECHFARM Hub - Empowering Agri-Tech Innovators</title>
+    <meta
+      name="description"
+      content="TECHFARM Hub invests in visionary entrepreneurs and provides cutting-edge training to shape the future of sustainable agri-tech solutions."
+    />
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f0fdf4",
+                100: "#dcfce7",
+                200: "#bbf7d0",
+                300: "#86efac",
+                400: "#4ade80",
+                500: "#22c55e",
+                600: "#16a34a",
+                700: "#15803d",
+                800: "#166534",
+                900: "#7A1A61",
+              },
+              secondary: {
+                50: "#eff6ff",
+                100: "#dbeafe",
+                200: "#bfdbfe",
+                300: "#93c5fd",
+                400: "#60a5fa",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a",
+              },
+              accent: {
+                50: "#fffbeb",
+                100: "#fef3c7",
+                200: "#fde68a",
+                300: "#fcd34d",
+                400: "#fbbf24",
+                500: "#f59e0b",
+                600: "#d97706",
+                700: "#b45309",
+                800: "#92400e",
+                900: "#78350f",
+              },
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+            animation: {
+              "bounce-slow": "bounce 3s infinite",
+              "pulse-slow": "pulse 4s infinite",
+              "fade-in": "fadeIn 1.5s ease-out",
+              "fade-in-up": "fadeInUp 1s ease-out",
+              "fade-in-down": "fadeInDown 1s ease-out",
+              "fade-in-left": "fadeInLeft 1s ease-out",
+              "fade-in-right": "fadeInRight 1s ease-out",
+              "scroll-left": "scrollLeft 30s linear infinite",
+              "scroll-right": "scrollRight 30s linear infinite",
+              "text-rotate": "textRotate 15s ease-in-out infinite",
+              "zoom-in": "zoomIn 1s ease-out",
+              "slide-up": "slideUp 0.8s ease-out",
+              typewriter: "typewriter 2s steps(20) forwards",
+              "chatbot-bounce": "chatbotBounce 2s infinite",
+              "typing-dots": "typingDots 1.5s infinite ease-in-out",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans bg-gray-50" x-data="app()">
+    <!-- Skip to content link for accessibility -->
+    <!-- <a href="#main-content" class="skip-to-content">Skip to main content</a> -->
+
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 bg-white shadow-sm"
+      x-data="{ mobileMenu: false }"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="TECHFARM Hub Logo"
+                class="h-32 w-auto"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="ml-10 flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-primary-600 font-semibold px-3 py-2 text-sm"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >About</a
+              >
+              <a
+                href="services.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Services</a
+              >
+              <a
+                href="projects.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Projects</a
+              >
+              <a
+                href="events.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Events</a
+              >
+              <a
+                href="careers.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Careers</a
+              >
+              <a
+                href="contact.html"
+                class="text-gray-900 hover:text-secondary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >Contact</a
+              >
+              <a
+                href="#"
+                class="bg-secondary-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-secondary-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2"
+                >Get Started</a
+              >
+            </div>
+          </div>
+          <div class="lg:hidden">
+            <button
+              @click="mobileMenu = !mobileMenu"
+              type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-secondary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+              :aria-expanded="mobileMenu"
+            >
+              <span class="sr-only">Open main menu</span>
+              <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        x-show="mobileMenu"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 -translate-y-4"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-4"
+        class="lg:hidden mobile-menu bg-white shadow-lg"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="index.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >About</a
+          >
+          <a
+            href="services.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Services</a
+          >
+          <a
+            href="projects.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Programs</a
+          >
+          <a
+            href="events.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Events</a
+          >
+          <a
+            href="careers.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Careers</a
+          >
+          <a
+            href="contact.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-secondary-600 hover:bg-gray-100"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md text-base font-medium bg-secondary-600 text-white hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Carousel - Fixed -->
+    <section
+      class="hero-section relative overflow-hidden"
+      x-data="{
+      currentSlide: 0,
+      slides: [
+        {
+          image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
+          title: 'Cultivating Innovation in',
+          highlight: 'Agriculture & Technology',
+          description: 'We invest in visionary entrepreneurs and provide cutting-edge training to shape the future of sustainable agri-tech solutions.'
+        },
+        {
+          image: 'https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
+          title: 'Empowering the Future of',
+          highlight: 'Sustainable Farming',
+          description: 'Join our mission to transform agriculture through technology, innovation, and sustainable practices.'
+        },
+        {
+          image: 'https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
+          title: 'Growing',
+          highlight: 'Agri-Tech Startups',
+          description: 'We provide funding, mentorship, and resources to help agri-tech startups thrive and scale.'
+        }
+      ],
+      init() {
+        // Auto-advance slides
+        setInterval(() => {
+          this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+        }, 5000);
+      }
+    }"
+    >
+      <!-- Background Carousel with fixed container -->
+      <div class="hero-bg-container absolute inset-0 z-0">
+        <template x-for="(slide, index) in slides" :key="index">
+          <div
+            class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 carousel-item"
+            :class="{ 'opacity-100 z-10': currentSlide === index, 'opacity-0 z-0': currentSlide !== index }"
+            :style="'background-image: url(' + slide.image + ')'"
+            :aria-hidden="currentSlide !== index ? 'true' : 'false'"
+          >
+            <div class="absolute inset-0 gradient-overlay"></div>
+          </div>
+        </template>
+      </div>
+
+      <div
+        class="hero-content-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
+        id="main-content"
+        tabindex="-1"
+      >
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="text-white" data-aos="fade-right">
+            <template x-for="(slide, index) in slides" :key="index">
+              <div
+                x-show="currentSlide === index"
+                x-transition:enter="transition ease-in-out duration-800"
+                x-transition:enter-start="opacity-0 transform scale-90"
+                x-transition:enter-end="opacity-100 transform scale-100"
+                x-transition:leave="transition ease-in duration-500"
+                x-transition:leave-start="opacity-100 transform scale-100"
+                x-transition:leave-end="opacity-0 transform scale-110"
+                role="group"
+                :aria-label="'Slide ' + (index + 1) + ' of ' + slides.length"
+              >
+                <h1
+                  class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+                >
+                  <span x-text="slide.title" class="block"></span>
+                  <span
+                    class="text-accent-300 block mt-2 animate-pulse-slow"
+                    x-text="slide.highlight"
+                  ></span>
+                </h1>
+                <p
+                  class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-left"
+                  x-text="slide.description"
+                ></p>
+              </div>
+            </template>
+
+            <div class="flex flex-wrap gap-4 mt-8">
+              <a
+                href="#"
+                class="bg-white text-primary-700 px-6 py-3 md:px-8 md:py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg animate-bounce-slow focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-700"
+                >Join Our Programs</a
+              >
+              <a
+                href="#"
+                class="border-2 border-white text-white px-6 py-3 md:px-8 md:py-4 rounded-md text-lg font-semibold hover:bg-white hover:text-primary-700 transition-colors duration-300 animate-fade-in-down focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-700"
+                >Invest With Us</a
+              >
+            </div>
+          </div>
+
+          <div class="relative hidden md:block" data-aos="fade-left">
+            <!-- Redesigned cards with better alignment and animation -->
+            <div class="flex flex-col space-y-8">
+              <div
+                class="bg-white p-8 rounded-xl shadow-lg transform transition-all duration-500 hover:scale-105 card-hover card-overlay w-full"
+                x-data="{ 
+                  currentCardIndex: 0,
+                  cardContents: [
+                    { title: 'Innovation Grants', content: 'We\'ve awarded over $2M in funding to promising agri-tech startups this year.', icon: 'dollar-sign' },
+                    { title: 'Startups Supported', content: '150+ innovative agri-tech ventures accelerated through our programs.', icon: 'trending-up' },
+                    { title: 'Global Network', content: '500+ industry experts and mentors across 15+ countries.', icon: 'globe' }
+                  ],
+                  init() {
+                    setInterval(() => {
+                      this.currentCardIndex = (this.currentCardIndex + 1) % this.cardContents.length;
+                    }, 4000);
+                  }
+                }"
+              >
+                <template x-for="(card, index) in cardContents" :key="index">
+                  <div
+                    x-show="currentCardIndex === index"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform translate-y-4"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-200"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    class="flex items-start"
+                  >
+                    <div class="bg-primary-100 p-3 rounded-lg mr-4">
+                      <i
+                        :data-feather="card.icon"
+                        class="w-8 h-8 text-primary-600"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3
+                        class="font-bold text-secondary-600 mb-2 text-xl"
+                        x-text="card.title"
+                      ></h3>
+                      <p class="text-gray-600" x-text="card.content"></p>
+                    </div>
+                  </div>
+                </template>
+              </div>
+
+              <div
+                class="bg-accent-500 p-8 rounded-xl shadow-lg transform transition-all duration-500 hover:scale-105 card-hover overlapped-card w-11/12"
+                x-data="{ 
+                  currentCardIndex: 0,
+                  cardContents: [
+                    { title: '5+ Years Experience', content: 'Supporting agri-tech innovation since 2018', icon: 'award' },
+                    { title: '2K+ Professionals', content: 'Trained through our comprehensive programs', icon: 'users' },
+                    { title: '$25M+ Funding', content: 'Deployed to innovative agri-tech solutions', icon: 'dollar-sign' }
+                  ],
+                  init() {
+                    setInterval(() => {
+                      this.currentCardIndex = (this.currentCardIndex + 1) % this.cardContents.length;
+                    }, 4000);
+                  }
+                }"
+              >
+                <template x-for="(card, index) in cardContents" :key="index">
+                  <div
+                    x-show="currentCardIndex === index"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform translate-y-4"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-200"
+                    x-transition:leave-start="opacity-100 transform translate-Y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    class="flex items-start"
+                  >
+                    <div class="bg-white bg-opacity-20 p-3 rounded-lg mr-4">
+                      <i
+                        :data-feather="card.icon"
+                        class="w-8 h-8 text-white"
+                      ></i>
+                    </div>
+                    <div class="text-white">
+                      <h3
+                        class="font-bold text-xl mb-2"
+                        x-text="card.title"
+                      ></h3>
+                      <p class="text-sm" x-text="card.content"></p>
+                    </div>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel indicators -->
+        <div
+          class="flex justify-center mt-12 space-x-3"
+          role="tablist"
+          aria-label="Carousel navigation"
+        >
+          <template x-for="(slide, index) in slides" :key="index">
+            <button
+              @click="currentSlide = index"
+              class="w-3 h-3 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
+              :class="{ 'bg-white transform scale-125': currentSlide === index, 'bg-gray-300': currentSlide !== index }"
+              :aria-label="'Go to slide ' + (index + 1)"
+              :aria-selected="currentSlide === index ? 'true' : 'false'"
+              role="tab"
+            ></button>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section with Carousel -->
+    <section class="py-16 bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-gray-500 mb-10 animate-fade-in">
+          Trusted by leading organizations worldwide
+        </p>
+        <div class="relative">
+          <div class="overflow-hidden">
+            <div
+              class="partner-logos animate-scroll-left flex space-x-12 py-4"
+              aria-hidden="true"
+            >
+              <!-- Duplicate logos for seamless loop -->
+              <img
+                src="https://via.placeholder.com/150x60/3B82F6/FFFFFF?text=AgriTech+Inc"
+                alt="AgriTech Inc. Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/10B981/FFFFFF?text=GreenGrowth"
+                alt="GreenGrowth Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/6366F1/FFFFFF?text=FarmFuture"
+                alt="FarmFuture Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/F59E0B/FFFFFF?text=CropSolutions"
+                alt="CropSolutions Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/EF4444/FFFFFF?text=AgriInnovate"
+                alt="AgriInnovate Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/8B5CF6/FFFFFF?text=BioFarm"
+                alt="BioFarm Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/EC4899/FFFFFF?text=TechGrow"
+                alt="TechGrow Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <!-- Duplicates for seamless loop -->
+              <img
+                src="https://via.placeholder.com/150x60/3B82F6/FFFFFF?text=AgriTech+Inc"
+                alt="AgriTech Inc. Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/10B981/FFFFFF?text=GreenGrowth"
+                alt="GreenGrowth Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/6366F1/FFFFFF?text=FarmFuture"
+                alt="FarmFuture Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/F59E0B/FFFFFF?text=CropSolutions"
+                alt="CropSolutions Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/EF4444/FFFFFF?text=AgriInnovate"
+                alt="AgriInnovate Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/8B5CF6/FFFFFF?text=BioFarm"
+                alt="BioFarm Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+              <img
+                src="https://via.placeholder.com/150x60/EC4899/FFFFFF?text=TechGrow"
+                alt="TechGrow Partner Logo"
+                class="h-8 md:h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="relative" data-aos="fade-right">
+            <div class="z-10">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                alt="TECHFARM Team collaborating on agri-tech innovation"
+                class="rounded-xl shadow-lg w-full"
+                loading="lazy"
+              />
+            </div>
+            <!-- Fixed yellow card positioning -->
+            <div
+              class="absolute -bottom-10 -right-6 bg-accent-500 p-6 rounded-xl shadow-lg w-2/3 z-0"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="text-white">
+                <h3 class="font-bold text-xl mb-2 animate-fade-in-down">
+                  5+ Years Experience
+                </h3>
+                <p class="text-sm animate-fade-in">
+                  Supporting agri-tech innovation since 2018
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-fade-in-right"
+            >
+              We're Building The Future of
+              <span class="text-primary-600 animate-pulse-slow"
+                >Sustainable Agriculture</span
+              >
+            </h2>
+            <p class="text-gray-600 mb-6 animate-fade-in">
+              TECHFARM Hub is a Pan-African social innovation and ecosystem
+              enabling hub which focuses on entrepreneurship, innovation and
+              business development using disruptive knowledge, tools, skills and
+              resources to upscale activities of entrepreneurs, startups and
+              MSMEs with emphasis on youth, women/girls and Persons With
+              Disabilities.
+            </p>
+            <p class="text-gray-600 mb-6 animate-fade-in">
+              We stimulate enthusiasm for productive and profitable green,
+              agritech and agribusiness economic opportunities in Ghana and the
+              simulate enthusiasm for productive and profitable, green,
+              agritech, and agribusiness opportunities in Ghana and the
+              diaspora.
+            </p>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start animate-fade-in-up">
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="flex items-center justify-center h-6 w-6 rounded-full bg-primary-100 text-primary-600"
+                  >
+                    <i data-feather="check" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <p class="ml-3 text-gray-600">
+                  We've supported over 150 startups with funding and mentorship
+                </p>
+              </div>
+              <div
+                class="flex items-start animate-fade-in-up"
+                style="animation-delay: 0.2s"
+              >
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="flex items-center justify-center h-6 w-6 rounded-full bg-primary-100 text-primary-600"
+                  >
+                    <i data-feather="check" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <p class="ml-3 text-gray-600">
+                  Our training programs have graduated 2,000+ professionals
+                </p>
+              </div>
+              <div
+                class="flex items-start animate-fade-in-up"
+                style="animation-delay: 0.4s"
+              >
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="flex items-center justify-center h-6 w-6 rounded-full bg-primary-100 text-primary-600"
+                  >
+                    <i data-feather="check" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <p class="ml-3 text-gray-600">
+                  Global network of 500+ industry experts and mentors
+                </p>
+              </div>
+            </div>
+            <a
+              href="about.html"
+              class="inline-flex items-center text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+            >
+              Learn more about us
+              <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section with Background Image -->
+    <section id="services" class="py-20 bg-image-section relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-white mb-4 animate-bounce-slow"
+          >
+            Our <span class="text-accent-300">Services</span>
+          </h2>
+          <p
+            class="text-xl text-white opacity-90 max-w-3xl mx-auto animate-fade-in"
+          >
+            Comprehensive support for agri-tech innovators at every stage of
+            their journey
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Training and Workshops -->
+          <div
+            class="bg-white bg-opacity-90 backdrop-blur-sm p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 card-hover"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-primary-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-pulse-slow"
+            >
+              <i data-feather="book-open" class="w-8 h-8 text-primary-600"></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+            >
+              Training and Workshops
+            </h3>
+            <p class="text-gray-600 mb-4 animate-fade-in">
+              Explore practical sessions in web development, digital marketing,
+              and emerging tech like IoT and AI—offered in-person, online, or
+              hybrid to suit all learners.
+            </p>
+
+            <a
+              href="services.html"
+              class="inline-flex items-center text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+            >
+              Learn more
+              <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+            </a>
+          </div>
+
+          <!-- Mentorship Programs -->
+          <div
+            class="bg-white bg-opacity-90 backdrop-blur-sm p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 card-hover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-secondary-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-pulse-slow"
+            >
+              <i data-feather="users" class="w-8 h-8 text-secondary-600"></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+            >
+              Mentorship Programs
+            </h3>
+            <p class="text-gray-600 mb-4 animate-fade-in">
+              Connect with experienced mentors for personalized guidance,
+              industry insights, and strategies to help grow your business or
+              startup to the next level.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+            >
+              Learn more
+              <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+            </a>
+          </div>
+
+          <!-- Startup Support -->
+          <div
+            class="bg-white bg-opacity-90 backdrop-blur-sm p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 card-hover"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-accent-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-pulse-slow"
+            >
+              <i data-feather="trending-up" class="w-8 h-8 text-accent-600"></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+            >
+              Startup Support
+            </h3>
+            <p class="text-gray-600 mb-4 animate-fade-in">
+              We provide business development support, funding access, and
+              programs like the Ghana Youth Innovation Accelerator to help
+              startups and MSMEs grow and thrive.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+            >
+              Learn more
+              <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+            </a>
+          </div>
+
+          <!-- Community Engagement -->
+          <div
+            class="bg-white bg-opacity-90 backdrop-blur-sm p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 card-hover"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="bg-primary-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-pulse-slow"
+            >
+              <i data-feather="heart" class="w-8 h-8 text-primary-600"></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+            >
+              Community Engagement
+            </h3>
+            <p class="text-gray-600 mb-4 animate-fade-in">
+              Join a vibrant community through hackathons, seminars, and
+              networking events that connect entrepreneurs, innovators, and
+              industry leaders for collaboration and growth.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+            >
+              Learn more
+              <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+            </a>
+          </div>
+
+          <!-- Business Consultancy -->
+          <div
+            class="bg-white bg-opacity-90 backdrop-blur-sm p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 card-hover"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="bg-secondary-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-pulse-slow"
+            >
+              <i
+                data-feather="briefcase"
+                class="w-8 h-8 text-secondary-600"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+            >
+              Business Consultancy
+            </h3>
+            <p class="text-gray-600 mb-4 animate-fade-in">
+              Get expert guidance in business planning, market analysis, and
+              strategy development to help your startup or business grow and
+              succeed sustainably.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+            >
+              Learn more
+              <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+            </a>
+          </div>
+
+          <!-- Multimedia Services -->
+          <div
+            class="bg-white bg-opacity-90 backdrop-blur-sm p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 card-hover"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div
+              class="bg-accent-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-pulse-slow"
+            >
+              <i data-feather="video" class="w-8 h-8 text-accent-600"></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+            >
+              Multimedia Services
+            </h3>
+            <p class="text-gray-600 mb-4 animate-fade-in">
+              We create high-quality visual and digital content for events,
+              product launches, and storytelling—helping you communicate your
+              ideas with clarity and impact.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+            >
+              Learn more
+              <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Preview Section -->
+    <section id="events" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-bounce-slow"
+          >
+            Our
+            <span class="text-primary-600">Projects</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
+            Join our community events, workshops, and conferences
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="Agri-Tech Conference with attendees listening to a speaker"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="text-sm text-primary-600 mb-2 animate-fade-in">
+                June 15, 2023 | Virtual
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+              >
+                Agri-Tech Innovation Summit
+              </h3>
+              <p class="text-gray-600 mb-4 animate-fade-in">
+                Join industry leaders discussing the future of agricultural
+                technology and sustainable farming practices.
+              </p>
+              <a
+                href="#"
+                class="text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+                >Learn more &rarr;</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="Workshop participants learning about precision agriculture"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="text-sm text-primary-600 mb-2 animate-fade-in">
+                July 8, 2023 | Nairobi
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+              >
+                Precision Agriculture Workshop
+              </h3>
+              <p class="text-gray-600 mb-4 animate-fade-in">
+                Hands-on training on using drones, sensors, and data analytics
+                for precision farming.
+              </p>
+              <a
+                href="#"
+                class="text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+                >Learn more &rarr;</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="Networking event with professionals discussing agri-tech investments"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="text-sm text-primary-600 mb-2 animate-fade-in">
+                August 22, 2023 | Lagos
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+              >
+                Agri-Tech Investors Meetup
+              </h3>
+              <p class="text-gray-600 mb-4 animate-fade-in">
+                Connect with investors interested in funding innovative
+                agricultural technology startups.
+              </p>
+              <a
+                href="#"
+                class="text-primary-600 font-medium hover:text-primary-800 transition-colors duration-200 animate-fade-in focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm"
+                >Learn more &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-primary-700 transition-colors duration-300 animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+          >
+            View All Projects
+            <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 gradient-bg-light">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-bounce-slow"
+          >
+            Upcoming <span class="text-primary-600">Events</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
+            Structured pathways to accelerate your agri-tech innovation journey
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="h-48 bg-primary-100 flex items-center justify-center">
+              <i
+                data-feather="zap"
+                class="w-16 h-16 text-primary-600 animate-pulse-slow"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+              >
+                Accelerator Program
+              </h3>
+              <p class="text-gray-600 mb-6 animate-fade-in">
+                6-month intensive program for early-stage startups with funding,
+                mentorship, and market access.
+              </p>
+              <div
+                class="flex items-center text-sm text-gray-500 mb-6 animate-fade-in"
+              >
+                <i data-feather="clock" class="w-4 h-4 mr-2"></i>
+                <span>6 months | $50K funding</span>
+              </div>
+              <a
+                href="#"
+                class="inline-flex items-center justify-center w-full bg-primary-600 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-primary-700 transition-colors duration-300 animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                >Apply Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="h-48 bg-secondary-100 flex items-center justify-center">
+              <i
+                data-feather="book-open"
+                class="w-16 h-16 text-secondary-600 animate-pulse-slow"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+              >
+                Professional Training
+              </h3>
+              <p class="text-gray-600 mb-6 animate-fade-in">
+                12-week courses in precision agriculture, agri-tech
+                entrepreneurship, and sustainable farming practices.
+              </p>
+              <div
+                class="flex items-center text-sm text-gray-500 mb-6 animate-fade-in"
+              >
+                <i data-feather="clock" class="w-4 h-4 mr-2"></i>
+                <span>12 weeks | Online/On-site</span>
+              </div>
+              <a
+                href="#"
+                class="inline-flex items-center justify-center w-full bg-white border border-primary-600 text-primary-600 px-6 py-3 rounded-md text-sm font-medium hover:bg-primary-50 transition-colors duration-300 animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                >View Courses</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="h-48 bg-accent-100 flex items-center justify-center">
+              <i
+                data-feather="globe"
+                class="w-16 h-16 text-accent-600 animate-pulse-slow"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-xl font-bold text-gray-900 mb-3 animate-fade-in-right"
+              >
+                Innovation Challenges
+              </h3>
+              <p class="text-gray-600 mb-6 animate-fade-in">
+                Annual competitions with cash prizes and incubation
+                opportunities for solving critical agricultural problems.
+              </p>
+              <div
+                class="flex items-center text-sm text-gray-500 mb-6 animate-fade-in"
+              >
+                <i data-feather="clock" class="w-4 h-4 mr-2"></i>
+                <span>Annual | $100K in prizes</span>
+              </div>
+              <a
+                href="#"
+                class="inline-flex items-center justify-center w-full bg-primary-600 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-primary-700 transition-colors duration-300 animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 gradient-bg text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-4xl font-bold mb-2 animate-bounce-slow">150+</div>
+            <div class="text-primary-100 animate-fade-in">
+              Startups Supported
+            </div>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-4xl font-bold mb-2 animate-bounce-slow">$25M+</div>
+            <div class="text-primary-100 animate-fade-in">Funding Deployed</div>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-4xl font-bold mb-2 animate-bounce-slow">2K+</div>
+            <div class="text-primary-100 animate-fade-in">
+              Trained Professionals
+            </div>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="text-4xl font-bold mb-2 animate-bounce-slow">15+</div>
+            <div class="text-primary-100 animate-fade-in">
+              Countries Reached
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section with Carousel -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-bounce-slow"
+          >
+            Success <span class="text-primary-600">Stories</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
+            Hear from innovators we've supported on their journey
+          </p>
+        </div>
+
+        <div
+          class="testimonial-carousel"
+          x-data="{
+            currentTestimonial: 0,
+            testimonials: [
+              {
+                name: 'Sarah Johnson',
+                role: 'Founder, AgriSense',
+                image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
+                content: 'TECHFARM Hub\'s accelerator program transformed our IoT soil monitoring solution from a concept to a commercially viable product. Their network connected us with our first major customers.',
+                rating: 5
+              },
+              {
+                name: 'Michael Chen',
+                role: 'CEO, GreenHarvest',
+                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
+                content: 'The professional training program gave me the skills and confidence to launch my vertical farming startup. The mentorship continues to be invaluable as we scale operations.',
+                rating: 5
+              },
+              {
+                name: 'Aisha Okonjo',
+                role: 'Director, FarmTech Solutions',
+                image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
+                content: 'The funding and technical support from TECHFARM Hub enabled us to expand our operations to three new regions. Their guidance on sustainable practices was particularly valuable.',
+                rating: 5
+              },
+              {
+                name: 'David Kimani',
+                role: 'CTO, CropMetrics',
+                image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
+                content: 'As a tech founder with limited agricultural experience, the mentorship program connected me with industry experts who helped shape our product to meet real farmer needs.',
+                rating: 5
+              },
+              {
+                name: 'Maria Rodriguez',
+                role: 'Founder, EcoGrow',
+                image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
+                content: 'The community events and networking opportunities have been incredible. We found our lead engineer and two major clients through TECHFARM Hub connections.',
+                rating: 5
+              },
+              {
+                name: 'James Okafor',
+                role: 'CEO, AgriData Analytics',
+                image: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
+                content: 'The innovation challenge not only provided funding but also validation for our approach. The feedback from judges helped us refine our business model significantly.',
+                rating: 5
+              }
+            ],
+            init() {
+              setInterval(() => {
+                this.currentTestimonial = (this.currentTestimonial + 1) % this.testimonials.length;
+              }, 5000);
+            }
+          }"
+        >
+          <div class="relative overflow-hidden">
+            <div
+              class="flex transition-transform duration-500 ease-in-out"
+              :style="'transform: translateX(-' + (currentTestimonial * 100) + '%)'"
+            >
+              <template
+                x-for="(testimonial, index) in testimonials"
+                :key="index"
+              >
+                <div class="w-full flex-shrink-0 px-4">
+                  <div class="bg-gray-50 p-8 rounded-xl h-full">
+                    <div class="flex items-center mb-6">
+                      <img
+                        :src="testimonial.image"
+                        :alt="testimonial.name"
+                        class="w-16 h-16 rounded-full object-cover"
+                        loading="lazy"
+                      />
+                      <div class="ml-4">
+                        <h4
+                          class="font-bold text-gray-900"
+                          x-text="testimonial.name"
+                        ></h4>
+                        <p
+                          class="text-primary-600"
+                          x-text="testimonial.role"
+                        ></p>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 italic mb-6"
+                      x-text="testimonial.content"
+                    ></p>
+                    <div class="flex text-accent-400">
+                      <template x-for="i in testimonial.rating">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center mt-8 space-x-2"
+            role="tablist"
+            aria-label="Testimonial navigation"
+          >
+            <template x-for="(testimonial, index) in testimonials" :key="index">
+              <button
+                @click="currentTestimonial = index"
+                class="w-3 h-3 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                :class="{ 'bg-primary-600 transform scale-125': currentTestimonial === index, 'bg-gray-300': currentTestimonial !== index }"
+                :aria-label="'Go to testimonial ' + (index + 1)"
+                :aria-selected="currentTestimonial === index ? 'true' : 'false'"
+                role="tab"
+              ></button>
+            </template>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg-2">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-white mb-6 animate-bounce-slow"
+          data-aos="fade-up"
+        >
+          Ready to Grow Your Agri-Tech Venture?
+        </h2>
+        <p
+          class="text-xl text-white opacity-90 max-w-3xl mx-auto mb-10 animate-fade-in"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Join our community of innovators shaping the future of sustainable
+          agriculture.
+        </p>
+        <div
+          class="flex flex-wrap justify-center gap-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <a
+            href="#"
+            class="bg-white text-primary-700 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors duration-300 animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-secondary-600"
+            >Apply for Funding</a
+          >
+          <a
+            href="#"
+            class="border-2 border-white text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-white hover:text-primary-700 transition-colors duration-300 animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-secondary-600"
+            >Explore Programs</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-fade-in-right"
+            >
+              Get In <span class="text-primary-600">Touch</span>
+            </h2>
+            <p class="text-gray-600 mb-8 animate-fade-in">
+              Have questions about our programs or investment opportunities? Our
+              team is here to help guide you.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-start animate-fade-in-up">
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="flex items-center justify-center h-10 w-10 rounded-full bg-primary-100 text-primary-600"
+                  >
+                    <i data-feather="mail" class="w-5 h-5"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">Email Us</h3>
+                  <p class="text-gray-600">ask.techfarmhubghana@gmail.com</p>
+                </div>
+              </div>
+              <div
+                class="flex items-start animate-fade-in-up"
+                style="animation-delay: 0.2s"
+              >
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="flex items-center justify-center h-10 w-10 rounded-full bg-primary-100 text-primary-600"
+                  >
+                    <i data-feather="phone" class="w-5 h-5"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">Call Us</h3>
+                  <p class="text-gray-600">025 684 5145</p>
+                </div>
+              </div>
+              <div
+                class="flex items-start animate-fade-in-up"
+                style="animation-delay: 0.4s"
+              >
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="flex items-center justify-center h-10 w-10 rounded-full bg-primary-100 text-primary-600"
+                  >
+                    <i data-feather="map-pin" class="w-5 h-5"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">Visit Us</h3>
+                  <p class="text-gray-600">
+                    EN-046-1997 4 Grape Link-Galloway, Koforidua
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <form class="bg-gray-50 p-8 rounded-xl shadow-md">
+              <div class="grid grid-cols-1 gap-6">
+                <div class="animate-fade-in-up">
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
+                    required
+                  />
+                </div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.1s">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
+                    required
+                  />
+                </div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.2s">
+                  <label
+                    for="subject"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Subject</label
+                  >
+                  <select
+                    id="subject"
+                    class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
+                  >
+                    <option>General Inquiry</option>
+                    <option>Investment Opportunities</option>
+                    <option>Training Programs</option>
+                    <option>Partnerships</option>
+                  </select>
+                </div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.3s">
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
+                    required
+                  ></textarea>
+                </div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.4s">
+                  <button
+                    type="submit"
+                    class="w-full bg-primary-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+          <div>
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="TECHFARM Hub Logo"
+                class="h-32 w-auto"
+              />
+            </a>
+            <p class="text-gray-400 mb-6">
+              Empowering the next generation of agri-tech innovators through
+              investment, education, and community.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-1"
+                aria-label="Twitter"
+              >
+                <i data-feather="twitter" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-1"
+                aria-label="LinkedIn"
+              >
+                <i data-feather="linkedin" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-1"
+                aria-label="Facebook"
+              >
+                <i data-feather="facebook" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-1"
+                aria-label="Instagram"
+              >
+                <i data-feather="instagram" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="events.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Programs</h4>
+            <ul class="space-y=3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Accelerator</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Professional Training</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Innovation Challenges</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Mentorship</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+                  >Research Grants</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Subscribe to our newsletter for the latest updates and
+              opportunities.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 rounded-l-md w-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                aria-label="Email for newsletter subscription"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-primary-600 text-white px-4 py-2 rounded-r-md hover:bg-primary-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                aria-label="Subscribe to newsletter"
+              >
+                <i data-feather="send" class="w-5 h-5"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © <span id="current-year"></span> TECHFARM Hub. All rights reserved.
+          </p>
+
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors duration-300 focus:outline-none focus:underline rounded-sm"
+              >Cookies</a
+            >
+          </div>
+        </div>
+
+        <script>
+          // Automatically insert the current year
+          document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+        </script>
+      </div>
+    </footer>
+
+    <!-- Chatbot Toggle -->
+    <div class="chatbot-toggle" @click="chatbotOpen = !chatbotOpen">
+      <i data-feather="message-circle" class="w-6 h-6"></i>
+    </div>
+
+    <!-- WhatsApp Toggle -->
+    <div
+      class="whatsapp-toggle"
+      @click="window.open('https://wa.me/1234567890', '_blank')"
+    >
+      <i data-feather="message-circle" class="w-6 h-6"></i>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div
+      class="chatbot-container"
+      x-show="chatbotOpen"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 transform scale-95"
+      x-transition:enter-end="opacity-100 transform scale-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100 transform scale-100"
+      x-transition:leave-end="opacity-0 transform scale-95"
+      :class="{ 'open': chatbotOpen }"
+    >
+      <div class="chatbot-header">
+        <h3 class="font-semibold">TECHFARM Assistant</h3>
+        <button
+          @click="chatbotOpen = false"
+          class="text-white hover:text-gray-200"
+        >
+          <i data-feather="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="chatbot-messages" x-ref="messages">
+        <template x-for="(message, index) in chatbotMessages" :key="index">
+          <div class="message" :class="message.sender">
+            <div class="message-content" x-text="message.text"></div>
+          </div>
+        </template>
+        <div x-show="chatbotTyping" class="message bot">
+          <div class="typing-indicator">
+            <div class="typing-dot animate-typing-dots"></div>
+            <div class="typing-dot animate-typing-dots"></div>
+            <div class="typing-dot animate-typing-dots"></div>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input
+          type="text"
+          placeholder="Type your message..."
+          x-model="chatbotNewMessage"
+          @keyup.enter="sendChatbotMessage()"
+        />
+        <button @click="sendChatbotMessage()">
+          <i data-feather="send" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+      });
+
+      // Initialize Feather Icons
+      feather.replace();
+
+      // Add loading lazy to all images for better performance
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll("img");
+        images.forEach((img) => {
+          if (!img.hasAttribute("loading")) {
+            img.setAttribute("loading", "lazy");
+          }
+        });
+      });
+    </script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>
